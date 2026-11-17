@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noite Feliz 2026</title>
+<meta name="description" content="Contribua com a Noite Feliz 2026 copiando o Pix.">
+<meta property="og:title" content="Noite Feliz 2026">
+<meta property="og:description" content="Contribua copiando o Pix.">
+<meta property="og:image" content="share.png">
+<meta name="theme-color" content="#041a5c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg1:#020b2e; --bg2:#06257a; --gold:#f7c85a; --gold-d:#b8842a; --white:#fff;
+  }
+  *{box-sizing:border-box;margin:0}
+  html,body{min-height:100%}
+  body{
+    font-family:'Nunito',system-ui,sans-serif; color:var(--white); text-align:center;
+    background:
+      radial-gradient(ellipse at 15% 70%, rgba(40,110,255,.35), transparent 45%),
+      radial-gradient(ellipse at 90% 55%, rgba(40,110,255,.30), transparent 40%),
+      linear-gradient(180deg,var(--bg1),var(--bg2) 60%,#031450);
+    background-attachment:fixed;
+    overflow-x:hidden;
+  }
+  .stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .stars i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.7;animation:tw 3s ease-in-out infinite}
+  .stars i.g{background:var(--gold);width:5px;height:5px}
+  @keyframes tw{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:1;transform:scale(1.3)}}
+  .moon{position:fixed;top:18px;right:22px;width:64px;height:64px;z-index:0;
+    border-radius:50%;box-shadow:inset -18px 6px 0 0 #dfeaff;filter:drop-shadow(0 0 14px rgba(190,215,255,.8));
+    transform:rotate(-20deg)}
+  main{position:relative;z-index:1;max-width:460px;margin:0 auto;padding:56px 22px 40px}
+  h1{font-family:'Fredoka',sans-serif;font-weight:700;line-height:.95;text-shadow:0 4px 0 rgba(0,0,0,.35)}
+  h1 .a{display:block;font-size:clamp(64px,22vw,96px)}
+  h1 .b{display:block;font-size:clamp(64px,22vw,96px);color:var(--gold);text-shadow:0 4px 0 var(--gold-d)}
+  .year{display:inline-block;margin-top:14px;padding:4px 30px;border-radius:999px;background:var(--gold);
+    color:#071a52;font-family:'Fredoka',sans-serif;font-weight:700;font-size:32px;box-shadow:0 4px 0 var(--gold-d)}
+  .bowl{display:block;margin:22px auto 6px;width:150px;height:auto}
+  .verse{font-size:20px;line-height:1.35;font-weight:700;margin:14px 6px 28px}
+  .card{background:rgba(255,255,255,.08);border:1.5px solid rgba(247,200,90,.55);border-radius:24px;
+    padding:22px 18px;backdrop-filter:blur(6px)}
+  .card h2{font-family:'Fredoka',sans-serif;font-size:24px;color:var(--gold);margin-bottom:4px}
+  .card p.s{font-size:15px;opacity:.85;margin-bottom:14px}
+  .code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.4;
+    background:rgba(0,0,0,.35);border-radius:14px;padding:12px;word-break:break-all;
+    max-height:92px;overflow:auto;text-align:left;user-select:all;-webkit-user-select:all}
+  button.copy{margin-top:14px;width:100%;border:0;cursor:pointer;border-radius:18px;padding:16px;
+    font-family:'Fredoka',sans-serif;font-weight:600;font-size:22px;color:#071a52;background:var(--gold);
+    box-shadow:0 5px 0 var(--gold-d);transition:transform .08s, box-shadow .08s}
+  button.copy:active{transform:translateY(4px);box-shadow:0 1px 0 var(--gold-d)}
+  button.copy.ok{background:#7be08f;box-shadow:0 5px 0 #3b9a50}
+  .steps{margin-top:16px;font-size:14px;opacity:.9;line-height:1.5}
+  .who{margin-top:12px;font-size:13px;opacity:.75}
+  footer{margin-top:34px;letter-spacing:.14em;font-size:13px;font-weight:700;opacity:.9}
+  footer a{color:inherit;text-decoration:none}
+  .err{color:#ffb3b3;font-size:14px}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<div class="moon" aria-hidden="true"></div>
+
+<main>
+  <h1><span class="a">Noite</span><span class="b">Feliz</span></h1>
+  <div class="year">2026</div>
+
+  <svg class="bowl" viewBox="0 0 200 170" aria-hidden="true">
+    <g fill="none" stroke="#b9c4ff" stroke-width="7" stroke-linecap="round" opacity=".9">
+      <path d="M72 14c-8 8 8 14 0 24"/><path d="M100 10c-8 8 8 14 0 24"/><path d="M128 14c-8 8 8 14 0 24"/>
+    </g>
+    <path d="M52 78c4-24 26-34 48-34s44 10 48 34z" fill="#f2cf78"/>
+    <circle cx="92" cy="58" r="4" fill="#fff"/><circle cx="112" cy="66" r="3" fill="#fff"/><circle cx="126" cy="54" r="3" fill="#fff"/>
+    <path d="M40 78h120c0 40-26 62-60 62s-60-22-60-62z" fill="#fff"/>
+    <path d="M100 118c-12-10-18-16-18-24 0-6 5-10 10-10 4 0 7 2 8 5 1-3 4-5 8-5 5 0 10 4 10 10 0 8-6 14-18 24z" fill="#f2cf78"/>
+    <path d="M26 118c14 36 44 46 74 46s60-10 74-46" fill="none" stroke="var(--gold)" stroke-width="9" stroke-linecap="round"/>
+  </svg>
+
+  <p class="verse">Para que todos vejam, entendam e juntamente compreendam que a mão do Senhor foi quem fez isso.</p>
+
+  <section class="card">
+    <h2>Contribua com um Pix</h2>
+    <p class="s">Toque em copiar, abra o app do seu banco, escolha <b>Pix → Copia e Cola</b> e cole.</p>
+    <div class="code" id="code" aria-live="polite">Gerando…</div>
+    <button class="copy" id="btn" type="button">Copiar Pix</button>
+    <p class="steps" id="msg"></p>
+    <p class="who" id="who"></p>
+  </section>
+
+  <footer><a href="https://instagram.com/noite.feliz_" target="_blank" rel="noopener">@NOITE.FELIZ_</a></footer>
+</main>
+
+<script>
+/* ============ EDITE APENAS AQUI ============ */
+const CONFIG = {
+  chavePix: "noite.felizz2512@gmail.com", // CPF/CNPJ (só números), e-mail, celular (+5592999999999) ou chave aleatória
+  nome:     "ELIAS NASCIMENTO NOGUEIRA",  // nome do recebedor (máx. 25 letras)
+  cidade:   "MANAUS",                     // cidade (máx. 15 letras)
+  valor:    ""                            // deixe vazio para a pessoa digitar o valor, ou ex.: "20.00"
+};
+/* ========================================== */
+
+const clean = (s, n) => s.normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^A-Za-z0-9 ]/g,"").toUpperCase().trim().slice(0,n);
+const tlv = (id, v) => id + String(v.length).padStart(2,"0") + v;
+
+function crc16(str){
+  let crc = 0xFFFF;
+  for (let i=0;i<str.length;i++){
+    crc ^= str.charCodeAt(i) << 8;
+    for (let j=0;j<8;j++) crc = (crc & 0x8000) ? ((crc << 1) ^ 0x1021) & 0xFFFF : (crc << 1) & 0xFFFF;
+  }
+  return crc.toString(16).toUpperCase().padStart(4,"0");
+}
+
+function pixPayload({chavePix, nome, cidade, valor}){
+  let p = tlv("00","01") + tlv("01","11")
+        + tlv("26", tlv("00","br.gov.bcb.pix") + tlv("01", chavePix.trim()))
+        + tlv("52","0000") + tlv("53","986");
+  if (valor) p += tlv("54", Number(valor).toFixed(2));
+  p += tlv("58","BR") + tlv("59", clean(nome,25)) + tlv("60", clean(cidade,15)) + tlv("62", tlv("05","***"));
+  p += "6304";
+  return p + crc16(p);
+}
+
+const codeEl = document.getElementById("code"), btn = document.getElementById("btn"),
+      msg = document.getElementById("msg"), who = document.getElementById("who");
+
+let payload = "";
+if (CONFIG.chavePix.startsWith("COLOQUE")) {
+  codeEl.innerHTML = '<span class="err">Configure sua chave Pix no arquivo index.html.</span>';
+  btn.disabled = true;
+} else {
+  payload = pixPayload(CONFIG);
+  codeEl.textContent = payload;
+  who.textContent = "Recebedor: " + clean(CONFIG.nome,25) + (CONFIG.valor ? " · R$ " + Number(CONFIG.valor).toFixed(2).replace(".",",") : "");
+}
+
+btn.addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(payload); }
+  catch(e){
+    const r = document.createRange(); r.selectNodeContents(codeEl);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r); document.execCommand("copy");
+  }
+  btn.textContent = "Copiado! ✓"; btn.classList.add("ok");
+  msg.textContent = "Agora abra o app do seu banco e cole em Pix → Copia e Cola. Obrigado! 💛";
+  setTimeout(()=>{ btn.textContent="Copiar Pix"; btn.classList.remove("ok"); }, 3000);
+});
+
+/* estrelas */
+const st = document.getElementById("stars");
+for (let i=0;i<70;i++){
+  const e = document.createElement("i");
+  if (i%9===0) e.className="g";
+  e.style.left = Math.random()*100+"%"; e.style.top = Math.random()*100+"%";
+  e.style.animationDelay = (Math.random()*3)+"s"; e.style.animationDuration = (2+Math.random()*3)+"s";
+  st.appendChild(e);
+}
+</script>
+</body>
+</html>
